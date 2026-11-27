@@ -16,8 +16,10 @@
 1. เปิด Terminal และเข้าไปที่โฟลเดอร์แบบฝึกหัดที่ 1:
    ```bash
    cd exercise-1
+
 2.สั่งรันคอนเทนเนอร์ทั้งหมดผ่าน Docker Compose:
     docker-compose up --build
+
 3.การเข้าใช้งาน Client:
     เปิด Terminal ใหม่เพื่อเข้าคอนเทนเนอร์ Client 1:
     docker exec -it chat_client1 python client.py
@@ -31,8 +33,10 @@
 ### ขั้นตอนการเริ่มทำงาน (How to run)
 1.เปิด Terminal และเข้าไปที่โฟลเดอร์แบบฝึกหัดที่ 2:
     cd exercise-2
+
 2.สั่งรัน Docker Compose:
     docker-compose up --build
+
 3.เปิดเว็บเบราว์เซอร์ไปที่ลิงก์: 
     http://localhost:5000 เพื่อทำการทดสอบส่งข้อความ
 
