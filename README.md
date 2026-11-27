@@ -18,12 +18,15 @@
    cd exercise-1
 
 2.สั่งรันคอนเทนเนอร์ทั้งหมดผ่าน Docker Compose:
+   ```bash
     docker-compose up --build
 
 3.การเข้าใช้งาน Client:
     เปิด Terminal ใหม่เพื่อเข้าคอนเทนเนอร์ Client 1:
+    ```bash
     docker exec -it chat_client1 python client.py
     เปิด Terminal ใหม่เพื่อเข้าคอนเทนเนอร์ Client 2:
+    ```bash
     docker exec -it chat_client2 python client.py
 
 ## 🛠️แบบฝึกหัดที่ 2: เว็บแอปพลิเคชัน Flask และ Socket Server
@@ -32,15 +35,19 @@
 
 ### ขั้นตอนการเริ่มทำงาน (How to run)
 1.เปิด Terminal และเข้าไปที่โฟลเดอร์แบบฝึกหัดที่ 2:
+   ```bash
     cd exercise-2
 
 2.สั่งรัน Docker Compose:
+   ```bash
     docker-compose up --build
 
-3.เปิดเว็บเบราว์เซอร์ไปที่ลิงก์: 
+3.เปิดเว็บเบราว์เซอร์ไปที่ลิงก์:
+   ```bash
     http://localhost:5000 เพื่อทำการทดสอบส่งข้อความ
 
 
 ## 🧹 วิธีการหยุดการทำงานและเคลียร์ Resources (สำหรับทั้งสองแบบฝึกหัด)
 ใช้คำสั่งนี้ในโฟลเดอร์ที่มีไฟล์ docker-compose.yml:
+   ```bash
     docker-compose down
